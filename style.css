@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    padding: 15px;
+    background-color: rgb(225, 220, 220);
+    display: grid;
+    grid-template-columns: 0.8fr 3fr 1fr;
+    grid-template-rows: repeat(4, auto);
+}
+
+.container input {
+    width: 250px;
+}
+
+/* General Styles */
+p {
+    display: inline;
+}
+
+svg, img {
+    height: 25px;
+    width: 25px;
+}
+
+.greet img {
+    height: 60px;
+    width: 60px;
+}
+
+/* Search and Menu */
+.search, .menu {
+    grid-column: 2 / 4;
+    display: grid;
+    align-items: center;
+}
+
+.search {
+    grid-template-columns: auto auto;
+    background-color: white;
+    padding: 10px 10px 0px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-bottom: 5px;
+}
+
+.search > .left {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+}
+
+.search > .right {
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+    gap: 8px;
+}
+
+.menu {
+    grid-template-columns: auto 1fr auto;
+    background-color: white;
+    padding: 0px 10px 10px 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.menu > .greet {
+    display: grid;
+    justify-content: end;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+}
+
+.greeting, #username {
+    display: grid;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.menu > .nav {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: end;
+    gap: 10px;
+}
+
+.menu button {
+    height: 30px;
+    width: 100px;
+    border: none;
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+/* Sidebar */
+.sidebar {
+    grid-row: 1 / 5;
+    gap: 40px;
+}
+
+.tabs, .acc {
+    display: grid;
+    padding-top: 20px;
+    gap: 10px;
+}
+
+.acc {
+    padding-top: 30px;
+}
+
+/* Tabs */
+.tab {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: start;
+}
+
+/* Patient Section */
+.pat {
+    grid-row: 3 / 5;
+    padding-top: 5px;
+    margin-right: 10px;
+}
+
+.ans, .trnds {
+    padding: 5px;
+}
+
+.patients, .announcements, .trendings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.patient {
+    display: grid;
+    gap: 5px;
+}
+
+.patient .btns {
+    margin-left: auto;
+    padding-right: 15px;
+}
+
+.patient svg {
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+
+/* Trends */
+.trends {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+}
+
+.patient, .announcements, .trendings {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.search {
+    background-color: white;
+    padding: 10px 10px 0px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-bottom: 5px;
+}
+
+.menu {
+    background-color: white;
+    padding: 0px 10px 10px 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.announcements, .trendings {
+    margin-top: 10px;
+}
+
+.trnds {
+    margin-top: -150px;
+}
